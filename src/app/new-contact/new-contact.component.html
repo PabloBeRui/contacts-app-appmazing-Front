@@ -1,0 +1,52 @@
+<mat-toolbar color="accent">
+  <a mat-button routerLink="/">Inicio</a>
+  <a mat-button routerLink="/contacts">Contactos</a>
+  <a mat-button routerLink="/new-contact">Nuevo contacto</a>
+
+  </mat-toolbar>
+
+<mat-card>
+  <mat-card-title>Nuevo contacto</mat-card-title>
+  <form (submit)="newContact()">
+    <mat-form-field color="accent" appearance="outline">
+      <mat-label>Nombre</mat-label>
+      <input matInput type="text" name="name" [(ngModel)]="name"><br>
+
+
+    </mat-form-field>
+    <mat-form-field color="accent" appearance="outline">
+      <mat-label>Apellido 1</mat-label>
+      <input matInput type="text" name="surname" [(ngModel)]="surname"><br>
+
+
+    </mat-form-field>
+
+  <mat-form-field color="accent" appearance="outline">
+    <mat-label>Apellido 2</mat-label>
+    <input matInput type="text" name="lastName" [(ngModel)]="lastName"><br>
+
+
+  </mat-form-field>
+
+  <mat-form-field color="accent" appearance="outline">
+    <mat-label>Telefono</mat-label>
+    <input matInput type="text" name="telephone" [(ngModel)]="telephone"><br>
+
+
+  </mat-form-field>
+
+  <mat-form-field color="accent" appearance="outline">
+    <mat-label>Email</mat-label>
+    <input matInput type="email" name="email" [(ngModel)]="email"><br>
+
+
+  </mat-form-field>
+
+  <button mat-button color="accent" type="submit">Agregar</button>
+
+
+
+
+  </form>
+
+  </mat-card>

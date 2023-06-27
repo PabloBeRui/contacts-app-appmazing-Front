@@ -1,0 +1,25 @@
+Mat-card {
+  width: 25rem;
+  height: 20rem;
+  margin: 1rem;
+  border: 3px solid #69f0ae;
+  border-radius: 1rem;
+}
+mat-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+mat-icon {
+ 
+  color: #69f0ae;
+}
+
+div {
+  display: flex;
+  justify-content: space-around;
+
+
+
+  width: 20rem;
+}
